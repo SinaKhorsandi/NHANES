@@ -1,0 +1,14 @@
+﻿metric,value
+full_n,5393
+exam_n,5098
+full_unique_seqn,5393
+exam_unique_seqn,5098
+full_yes,876
+exam_yes,836
+full_missing_any,1362
+exam_missing_any,1067
+exam_complete,4031
+exam_positive_weights,5098
+missing_bp_exam,258
+missing_waist_exam,319
+bpx_fourth_systolic,423

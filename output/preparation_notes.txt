@@ -1,0 +1,25 @@
+NHANES 2017-2018 preliminary data preparation (stage 1)
+No predictor imputation, no complete-case deletion, no modeling or SHAP done.
+DIQ010: 1 -> diabetes_reported=1, 2 -> 0; other responses excluded.
+Only adults age >= 20 with valid target included.
+Five categorical predictors are validated using documented variable-specific values.
+Blood pressure is provisionally the mean of available 1-4 readings; confirm with supervisor.
+Exact pandas XPORT zero artifact 5.397605346934028e-79 is recoded to numeric 0 before processing.
+RIDSTATR is retained in the examined subset; all adults are preserved in the broad subset.
+Diastolic 0 is not automatically treated as missing (allowed in CDC codebook).
+RIDRETH3 and DMDEDUC2 included provisionally; drafts differ in feature choices.
+WTINT2YR, WTMEC2YR, SDMVSTRA and SDMVPSU retained for later survey design review; NOT predictors.
+Missing due to questionnaire skips/ineligibility needs domain-specific review before imputation.
+Pandas version: 2.2.3
+Python version: 3.13.5
+original_demo_rows: 9254
+adults_age_20_plus: 5569
+adults_with_valid_DIQ010_1_or_2: 5393
+diabetes_reported_yes: 876
+diabetes_reported_no: 4517
+adults_with_at_least_one_missing_predictor: 1362
+adults_with_all_predictors_observed: 4031
+number_of_initial_predictors: 11
+examined_adults_with_valid_target: 5098
+examined_with_missing_predictors: 1067
+examined_complete_cases: 4031

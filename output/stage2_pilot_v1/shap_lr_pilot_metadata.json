@@ -1,0 +1,32 @@
+{
+  "stage": "LR SHAP pilot only; not final paper results",
+  "shap_version": "0.54.1",
+  "sklearn_version": "1.9.1",
+  "numpy_version": "2.5.4",
+  "pandas_version": "3.1.1",
+  "scipy_version": "1.18.1",
+  "input_dataset_sha256": "a017e04e8c9cbbf5d1d5a85e7bbc241629cc8679bdd21b1a3f96cbf0a2338752",
+  "common_test_n": 798,
+  "common_test_definition": "all held-out complete-case participants (same 798 used in model comparison)",
+  "background_n": 100,
+  "background_seed": 2026,
+  "background_source": "random sample from complete-case training participants; common across LR methods",
+  "explainer": "shap.LinearExplainer with Independent masker",
+  "output_scale": "LogisticRegression decision_function (log-odds)",
+  "categorical_handling": "one-hot encoded at model level; encoded-column SHAP values summed to original predictor",
+  "reference": "LR + CCA",
+  "metrics": [
+    "Spearman",
+    "Top-5 Jaccard",
+    "MSE-SHAP",
+    "MAE-SHAP"
+  ],
+  "caveats": [
+    "This is the LR family only; RF SHAP will be handled separately.",
+    "Summed one-hot contributions are grouped encoded-feature attributions, not a separately fitted group-Shapley game.",
+    "CCA training cohort is smaller than imputation-method cohorts.",
+    "Background-size and background-seed sensitivity are pending.",
+    "No repeated cross-validation, tuning, or survey weighting is included."
+  ],
+  "runtime_seconds": 0.11
+}

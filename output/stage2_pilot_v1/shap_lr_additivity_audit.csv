@@ -1,0 +1,4 @@
+model,method,n_explained,background_n,encoded_feature_count,max_abs_additivity_error_log_odds,mean_abs_additivity_error_log_odds,output_scale
+LR,Median/Mode,798,100,23,1.7763568394002505e-15,2.1007979538646445e-16,log_odds / LogisticRegression decision_function
+LR,CCA,798,100,23,1.7763568394002505e-15,2.0562777323257911e-16,log_odds / LogisticRegression decision_function
+LR,KNN k=5,798,100,23,1.7763568394002505e-15,3.322321532336935e-16,log_odds / LogisticRegression decision_function

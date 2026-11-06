@@ -1,0 +1,42 @@
+{
+  "stage": "pilot_only_not_final_analysis",
+  "outcome_definition": "DIQ010 prior physician-diagnosed diabetes self-report, not clinical diagnosis",
+  "data_file_sha256": "a017e04e8c9cbbf5d1d5a85e7bbc241629cc8679bdd21b1a3f96cbf0a2338752",
+  "source_split_file": "output/stage2_pilot_v1/split_manifest.csv",
+  "seed": 42,
+  "train_n": 4078,
+  "train_positive_n": 669,
+  "test_n": 1020,
+  "test_positive_n": 167,
+  "complete_case_test_n": 798,
+  "numeric_features": [
+    "RIDAGEYR",
+    "INDFMPIR",
+    "BMXBMI",
+    "BMXWAIST",
+    "BP_SYS_MEAN",
+    "BP_DIA_MEAN"
+  ],
+  "categorical_features": [
+    "RIAGENDR",
+    "RIDRETH3",
+    "DMDEDUC2",
+    "SMQ020",
+    "PAQ605"
+  ],
+  "numeric_imputation": "StandardScaler fit on train -> KNNImputer(k=5, weights=uniform) fit on train",
+  "categorical_imputation": "SimpleImputer(most_frequent) fit on train -> OneHotEncoder fit on train",
+  "random_forest": "RandomForestClassifier(n_estimators=300, min_samples_leaf=2, random_state=42)",
+  "logistic_regression": "LogisticRegression(max_iter=2000, random_state=42)",
+  "same_test_ids_and_labels_checked": true,
+  "same_training_people_as_median_mode": true,
+  "CCA_uses_fewer_training_people": true,
+  "repeated_cross_validation_tuning_SHAP_survey_weights": "NOT DONE",
+  "versions": {
+    "python": "3.13.3",
+    "numpy": "2.5.4",
+    "pandas": "3.1.1",
+    "sklearn": "1.9.1",
+    "joblib": "1.6.0"
+  }
+}

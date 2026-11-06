@@ -1,0 +1,31 @@
+{
+  "analysis_stage": "pilot_only_not_final_results",
+  "source_sha256": "a017e04e8c9cbbf5d1d5a85e7bbc241629cc8679bdd21b1a3f96cbf0a2338752",
+  "same_original_split_as_lr_rf_median_mode": true,
+  "evaluation_group": "common_complete_case_test_only",
+  "preprocessing": "no imputation; standard scaling and one-hot encoding train only",
+  "predictors": [
+    "RIDAGEYR",
+    "INDFMPIR",
+    "BMXBMI",
+    "BMXWAIST",
+    "BP_SYS_MEAN",
+    "BP_DIA_MEAN",
+    "RIAGENDR",
+    "RIDRETH3",
+    "DMDEDUC2",
+    "SMQ020",
+    "PAQ605"
+  ],
+  "train_n_full_median_mode": 4078,
+  "train_n_cca": 3233,
+  "test_n_common_complete_case": 798,
+  "uncontrolled_difference": "CCA uses fewer and potentially different training participants; NOT an isolated imputation effect",
+  "tuning_repeated_cv_shap_survey_weights": "NOT YET DONE",
+  "versions": {
+    "python": "3.13.3",
+    "numpy": "2.5.4",
+    "pandas": "3.1.1",
+    "sklearn": "1.9.1"
+  }
+}

@@ -1,0 +1,5 @@
+model,method,train_n,train_positive_n,evaluation_group,test_n,test_positive_n,roc_auc,brier_score,baseline_brier_score
+LR,KNN_numeric_k5_categorical_mode,4078,669,entire_held_out_test,1020,167,0.8080603154769009,0.11171910844584296,0.13691956001627684
+LR,KNN_numeric_k5_categorical_mode,4078,669,common_complete_case_test,798,124,0.8106513831722025,0.10668065880802648,0.13131793370198405
+RF,KNN_numeric_k5_categorical_mode,4078,669,entire_held_out_test,1020,167,0.7960035380587008,0.11414862539350701,0.13691956001627684
+RF,KNN_numeric_k5_categorical_mode,4078,669,common_complete_case_test,798,124,0.7966820618359338,0.11046373626196901,0.13131793370198405

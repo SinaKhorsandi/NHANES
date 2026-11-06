@@ -1,0 +1,3 @@
+model,reference_method,comparison_method,test_n,background_n,spearman_rank_correlation,reference_top5,comparison_top5,top5_jaccard,mse_shap,mae_shap,shap_scale,note
+LR,CCA,Median/Mode,798,100,0.8454545454545455,RIDAGEYR;BMXBMI;BMXWAIST;RIDRETH3;DMDEDUC2,RIDAGEYR;BMXBMI;BMXWAIST;RIAGENDR;RIDRETH3,0.6666666666666666,0.054168093864435045,0.11040344506242024,log_odds,Pilot only; CCA and imputation methods use different training cohort sizes/compositions.
+LR,CCA,KNN k=5,798,100,0.7090909090909092,RIDAGEYR;BMXBMI;BMXWAIST;RIDRETH3;DMDEDUC2,RIDAGEYR;BMXWAIST;RIAGENDR;RIDRETH3;PAQ605,0.42857142857142855,0.019896434893179573,0.07244219413979132,log_odds,Pilot only; CCA and imputation methods use different training cohort sizes/compositions.

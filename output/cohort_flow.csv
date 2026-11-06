@@ -1,0 +1,12 @@
+﻿metric,value
+original_demo_rows,9254
+adults_age_20_plus,5569
+adults_with_valid_DIQ010_1_or_2,5393
+diabetes_reported_yes,876
+diabetes_reported_no,4517
+adults_with_at_least_one_missing_predictor,1362
+adults_with_all_predictors_observed,4031
+number_of_initial_predictors,11
+examined_adults_with_valid_target,5098
+examined_with_missing_predictors,1067
+examined_complete_cases,4031

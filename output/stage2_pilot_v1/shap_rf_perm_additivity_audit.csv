@@ -1,0 +1,4 @@
+model,method,n_explained,background_n,encoded_feature_count,permutation_cycles,max_evals,max_abs_additivity_error_probability,mean_abs_additivity_error_probability,tolerance,audit_status,output_scale
+RF,Median/Mode,798,100,23,5,231,1.3322676295501878e-15,1.8278072594872419e-16,1e-08,PASS,positive-class probability
+RF,CCA,798,100,23,5,231,1.3322676295501878e-15,1.9028807873604987e-16,1e-08,PASS,positive-class probability
+RF,KNN k=5,798,100,23,5,231,1.2212453270876722e-15,1.9149491599449274e-16,1e-08,PASS,positive-class probability

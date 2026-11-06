@@ -1,0 +1,39 @@
+{
+  "study_stage": "pilot_only_not_final_analysis",
+  "outcome_definition": "DIQ010 yes/no; self-reported prior diagnosis",
+  "input_path": "/home/pedram/Desktop/NHANES_Stage1./NHANES_Stage1/NHANES_Stage1_Verified/output/nhanes_examined_clean_with_missing.csv",
+  "input_sha256": "a017e04e8c9cbbf5d1d5a85e7bbc241629cc8679bdd21b1a3f96cbf0a2338752",
+  "seed": 42,
+  "test_fraction": 0.2,
+  "train_n": 4078,
+  "train_positive_n": 669,
+  "test_n": 1020,
+  "test_positive_n": 167,
+  "common_complete_case_test_n": 798,
+  "train_any_missing_n": 845,
+  "numeric_predictors": [
+    "RIDAGEYR",
+    "INDFMPIR",
+    "BMXBMI",
+    "BMXWAIST",
+    "BP_SYS_MEAN",
+    "BP_DIA_MEAN"
+  ],
+  "categorical_predictors": [
+    "RIAGENDR",
+    "RIDRETH3",
+    "DMDEDUC2",
+    "SMQ020",
+    "PAQ605"
+  ],
+  "preprocessing": "train-only numeric median+standardization; categorical mode+one-hot",
+  "estimator": "LogisticRegression(max_iter=2000, default regularization)",
+  "weights_or_survey_design_used": false,
+  "versions": {
+    "python": "3.13.3",
+    "numpy": "2.5.4",
+    "pandas": "3.1.1",
+    "sklearn": "1.9.1",
+    "joblib": "1.6.0"
+  }
+}

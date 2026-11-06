@@ -1,0 +1,34 @@
+{
+  "study_stage": "pilot_only_not_final_analysis",
+  "model": "RandomForestClassifier(n_estimators=300, min_samples_leaf=2, random_state=42)",
+  "outcome": "DIQ010 self-reported prior diabetes diagnosis; not clinical confirmation",
+  "input_sha256": "a017e04e8c9cbbf5d1d5a85e7bbc241629cc8679bdd21b1a3f96cbf0a2338752",
+  "train_test_assignment": "Read unchanged split_manifest.csv created by LR pilot",
+  "preprocessing": "Clone LR numeric median + scale and categorical mode + one-hot specification; fit on train only",
+  "predictors": [
+    "RIDAGEYR",
+    "INDFMPIR",
+    "BMXBMI",
+    "BMXWAIST",
+    "BP_SYS_MEAN",
+    "BP_DIA_MEAN",
+    "RIAGENDR",
+    "RIDRETH3",
+    "DMDEDUC2",
+    "SMQ020",
+    "PAQ605"
+  ],
+  "train_n": 4078,
+  "test_n": 1020,
+  "common_complete_case_test_n": 798,
+  "random_state": 42,
+  "survey_weighting_applied": false,
+  "interpretation": "One held-out split; not a final statistically validated model comparison",
+  "versions": {
+    "python": "3.13.3",
+    "numpy": "2.5.4",
+    "pandas": "3.1.1",
+    "scikit_learn": "1.9.1",
+    "joblib": "1.6.0"
+  }
+}
